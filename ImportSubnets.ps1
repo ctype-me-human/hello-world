@@ -79,8 +79,8 @@
 
 #region MAIN
     clear-host
-    $defaultSite = "Nomad-Site"
-    get-inputCSV "Valv 08-30-16.csv" | 
+    $defaultSite = "<yourSite>"
+    get-inputCSV "<yourFile>.csv" | 
         % {$si = $_ #Subnet Info        
             $city = $state = $address = $region = $country = ""
             $Location = ""
